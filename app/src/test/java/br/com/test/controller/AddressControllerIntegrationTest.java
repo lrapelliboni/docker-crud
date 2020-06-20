@@ -34,7 +34,7 @@ public class AddressControllerIntegrationTest {
     }
 
     @Test
-    public void testGetAllPosts() {
+    public void testGetAll() {
         HttpHeaders headers = new HttpHeaders();
         HttpEntity<String> entity = new HttpEntity<String>(null, headers);
         ResponseEntity<String> response = restTemplate.exchange(getRootUrl() + "/address",
