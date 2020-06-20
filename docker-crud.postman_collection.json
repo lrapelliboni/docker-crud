@@ -1,0 +1,102 @@
+{
+	"info": {
+		"_postman_id": "de73c267-3e65-4f65-85b7-9a437c51cf9b",
+		"name": "docker-crud",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Save",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"streetName\": \"Rua Professora Argante dimenco\",\n    \"number\": 23,\n    \"complement\": \"Apartamento 01\",\n    \"neighbourhood\": \"Parque Universitário\",\n    \"city\": \"Americana\",\n    \"state\": \"SP\",\n    \"country\": \"Brasil\",\n    \"zipCode\": \"13607-230\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/address",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"address"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/address",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"address"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\n        \"id\": 1,\n        \"streetName\": \"test\",\n        \"number\": 23,\n        \"complement\": \"Apartamento 01\",\n        \"neighbourhood\": \"Morada do Sol\",\n        \"city\": \"São Carlos\",\n        \"state\": \"SP\",\n        \"country\": \"Brasil\",\n        \"zipCode\": \"13470-302\",\n        \"latitude\": null,\n        \"longitude\": null\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/address/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"address",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/address/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"address",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
