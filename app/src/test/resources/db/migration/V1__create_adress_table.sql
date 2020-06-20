@@ -1,0 +1,15 @@
+DROP TABLE IF EXISTS posts;
+
+CREATE TABLE address (
+  id INT AUTO_INCREMENT  PRIMARY KEY NOT NULL,
+  street_name VARCHAR(200) NOT NULL,
+  number INT(11) NOT NULL,
+  complement VARCHAR(200) NULL,
+  neighbourhood VARCHAR(200) NOT NULL,
+  city VARCHAR(200) NOT NULL,
+  state VARCHAR(200) NOT NULL,
+  country VARCHAR(200) NOT NULL,
+  zip_code VARCHAR(50) NOT NULL,
+  latitude VARCHAR(20) NULL,
+  longitude VARCHAR(20) NULL
+);
